@@ -1,0 +1,303 @@
+@font-face {
+    font-family: GreatLakesNF;
+    src: url("../fonts/GreatLakesNF.ttf");
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    font-family: Montserrat;
+    background-image: url("../imgs/bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+} header .head {
+    margin: 0 100px 50px 100px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+} header .quote {
+    font-size: 2em;
+    color: white;
+    background-color: black;
+    padding: 7px 13px;
+    font-family: Montserrat;
+    font-weight: bold;
+} header .menu {
+    color: white;
+    font-family: Montserrat;
+    position: relative;
+} header .menu::before {
+    content: "______";
+    position: absolute;
+    font-weight: bold;
+    top: -1em;
+} header .menu::after {
+    content: "______";
+    position: absolute;
+    font-weight: bold;
+    top: .3em;
+    left: 0;
+} header .smile {
+    margin: 100px 100px;
+    text-align: right;
+    color: white;
+} header .smile span {
+    font-size: 10em;
+    font-weight: 100;
+} header .smile b {
+    font-size: 3em;
+} .circles {
+    display: flex;
+    justify-content: space-around;
+} header .circles {
+    width: 150px;
+    margin: auto;
+    position: absolute;
+    bottom: 100px;
+    left: calc(50% - 75px);
+} header .circles div:not(.selected) {
+    background-color: black;
+} header .circles div {
+    width: 10px;
+    height: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+} header .circles .selected {
+    background-color: white;
+    border-color: wheat;
+}
+
+.first {
+    padding: 50px 50px;
+    text-align: center;
+} .first .h2__pre {
+    font-size: 1.9em;
+} .first .h2__post {
+    width: 30%;
+    margin: auto;
+    padding: 50px 0;
+} .first .line {
+    width: 100px;
+    border-bottom: 2px solid black;
+    margin: auto;
+} .first > p {
+    padding: 50px 100px;
+}
+
+.second {
+    display: flex;
+    font-size: 1.2em;
+    font-family: Montserrat;
+} .second > div {
+    flex-basis: 50%;
+} .second .right {
+    background-image: url("../imgs/bg2.png");
+    background-position: center;
+    background-size: cover;
+} .second .left {
+    background-color: rgb(255, 221, 213);
+} .second .text {
+    padding: 100px 150px 0 50px;
+} .second b {
+    font-size: 1.4em;
+} .second .circles {
+    padding: 50px 50px;
+    width: 100px;
+} .second .circles div {
+    width: 10px;
+    height: 10px;
+    border: 3px solid gray;
+    border-radius: 10px;
+} .second .circles .selected {
+    background-color: gray;
+    border-color: gray;
+}
+
+h2 {
+    font-size: 2em;
+}
+.third {
+    padding: 100px 50px;
+    font-family: Montserrat;
+} .third .line {
+    width: 100px;
+    border-bottom: 2px solid black;
+    padding: 10px 0 10px 0;
+} .third .container {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+} .third .container > div {
+    padding: 20px;
+    border: 1px solid black;
+} .third .container > div .quote {
+    margin-top: 20px;
+} .third .container > div .author {
+    margin-top: 20px;
+    font-style: italic;
+} .third .container > div h3 {
+    margin-top: 30px;
+    font-size: 1.3em;
+} .type1 {
+    background-color: none;
+    border-style: solid;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 40px auto;
+    display: block;
+    transition: .5s;
+} .type1:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.fourth {
+    background-image: url("../imgs/bg3.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 150px 50px;
+    font-family: Montserrat;
+}
+
+.daily_quote {
+    font-size: 3em;
+    padding: 0 200px;
+    text-align: center;
+} .quote_link {
+    text-align: center;
+    padding-top: 30px;
+} .fourth a {
+    color: white;
+}
+
+.fifth {
+    background-color: rgb(234, 238, 241);
+    font-family: Montserrat;
+    padding: 50px 50px;
+} .fifth .line {
+    width: 100px;
+    border-bottom: 2px solid black;
+    padding: 10px 0 10px 0;
+} .fifth .container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+} .staytrue {
+    grid-row: span 2;
+    background-image: url("../imgs/poster1.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 0 70px;
+} .staytrue p {
+    margin: 150px 50px;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+} .poster_buy {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: .6em;
+}
+.muse {
+    grid-column: span 2;
+    background-image: url("../imgs/poster2.png");
+    background-position: center;
+    background-size: cover;
+} .muse p {
+    margin: 50px;
+    padding-right: 400px;
+    font-size: .7em;
+} .muse p span {
+    font-weight: bold;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.makework {
+    background-image: url("../imgs/poster3.png");
+    background-position: center;
+    background-size: cover;
+    font-family: GreatLakesNF;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.silence {
+    background-image: url("../imgs/poster4.png");
+    background-position: center;
+    background-size: cover;
+    font-family: Raleway;
+    font-size: 1.8em;
+    position: relative;
+    padding: 10px 0;
+    color: white;
+} .silence span {
+    font-size: 1.2em;
+    font-weight: bold;
+} .silence > p {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+footer {
+    flex-wrap: wrap;
+    padding: 100px 50px;
+    display: flex;
+}
+footer > div:not(.under) {
+    flex-basis: 25%;
+} ul li {
+    list-style: none;
+    padding: 5px 2px;
+} ul {
+    margin-top: 40px;
+    padding-left: 0;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.form p {
+    margin: 30px 0;
+}
+.email {
+    padding: 11px 17px;
+    border: none;
+    background-color: rgb(234, 234, 234);
+}
+input {
+    font-family: Montserrat;
+} input[type="submit"] {
+    margin-left: 0;
+}
+.under {
+    background-color: rgb(234, 238, 241);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+} .under img {
+    filter: grayscale(100%);
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 25%;
+}
